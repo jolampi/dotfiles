@@ -4,7 +4,7 @@ palette = 'cherry'
 
 format = """
 [░▒▓](blossom)\
-$os\
+[ 󰴈 ](fg:void bg:blossom)\
 [](fg:blossom bg:cherry)\
 $directory\
 [](fg:cherry bg:wine)\
@@ -82,31 +82,3 @@ time_format = "%R" # Hour:Minute Format
 style = "bg:#1d2230"
 format = '[[  $time ](fg:petal bg:void)]($style)'
 
-[os]
-style = "fg:wine bg:blossom"
-format = "[ $symbol ]($style)"
-disabled = false
-
-[os.symbols]
-Windows = "󰍲"
-Ubuntu = "󰕈"
-SUSE = ""
-Raspbian = "󰐿"
-Mint = "󰣭"
-Macos = "󰀵"
-Manjaro = ""
-Linux = "󰌽"
-Gentoo = "󰣨"
-Fedora = "󰣛"
-Alpine = ""
-Amazon = ""
-Android = ""
-AOSC = ""
-Arch = "󰣇"
-Artix = "󰣇"
-EndeavourOS = ""
-CentOS = ""
-Debian = "󰣚"
-Redhat = "󱄛"
-RedHatEnterprise = "󱄛"
-Pop = ""

@@ -1,26 +1,37 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+palette = 'cherry'
+
 format = """
-[░▒▓](#a3aed2)\
+[░▒▓](blossom)\
 $os\
-[](bg:#769ff0 fg:#a3aed2)\
+[](fg:blossom bg:cherry)\
 $directory\
-[](fg:#769ff0 bg:#394260)\
+[](fg:cherry bg:wine)\
 $git_branch\
 $git_status\
-[](fg:#394260 bg:#212736)\
+[](fg:wine bg:plum)\
 $nodejs\
 $bun\
 $rust\
 $golang\
 $php\
-[](fg:#212736 bg:#1d2230)\
+[](fg:plum bg:void)\
 $time\
-[ ](fg:#1d2230)\
+[ ](fg:void)\
 \n$character"""
 
+[palettes.cherry]
+void = '#17131a'
+plum = '#211923'
+wine = '#30202d'
+cherry = '#d85a88'
+blossom = '#f08caf'
+cream = '#f3eee8'
+petal = '#c9bdc5'
+
 [directory]
-style = "fg:#e3e5e5 bg:#769ff0"
+style = "fg:cream bg:cherry"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -34,45 +45,45 @@ truncation_symbol = "…/"
 [git_branch]
 symbol = ""
 style = "bg:#394260"
-format = '[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)'
+format = '[[ $symbol $branch ](fg:petal bg:wine)]($style)'
 
 [git_status]
 style = "bg:#394260"
-format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
+format = '[[($all_status$ahead_behind )](fg:petal bg:wine)]($style)'
 
 [nodejs]
 symbol = ""
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+format = '[[ $symbol ($version) ](fg:petal bg:plum)]($style)'
 
 [bun]
 symbol = ""
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+format = '[[ $symbol ($version) ](fg:petal bg:plum)]($style)'
 
 [rust]
 symbol = ""
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+format = '[[ $symbol ($version) ](fg:petal bg:plum)]($style)'
 
 [golang]
 symbol = ""
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+format = '[[ $symbol ($version) ](fg:petal bg:plum)]($style)'
 
 [php]
 symbol = ""
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+format = '[[ $symbol ($version) ](fg:petal bg:plum)]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#1d2230"
-format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
+format = '[[  $time ](fg:petal bg:void)]($style)'
 
 [os]
-style = "bg:#a3aed2 fg:#090c0c"
+style = "fg:wine bg:blossom"
 format = "[ $symbol ]($style)"
 disabled = false
 
